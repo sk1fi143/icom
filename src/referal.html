@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Рефералы</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <script src="js/maskPosition.min.js"></script>
+</head>
+<body data-title="referals">
+    <div class="header">
+        <svg class="header-bg">
+            <mask id="deep-mask">
+                <rect width="100%" height="100%" fill="white" />
+                <use xlink:href="#deep-mask-svg" fill="black" class="mask-header">
+            </mask>
+            <symbol id="deep-mask-svg">
+                <g filter="none">
+                    <path class="mask-transl" id="deep-2" data-name="deep"
+                        d="M140,77.42H0c11.025,0,19.994-7.634,19.994-17.015V17.015c0-9.4,8.954-17.015,20-17.015h80c11.046,0,20,7.618,20,17.015V60.4c0,9.381,8.969,17.013,19.994,17.015Z"
+                        fill="#121821" />
+                </g>
+            </symbol>
+            <symbol viewBox="0 0 1202 118.001" id="header-bg">
+                <g id="header" transform="translate(18 14)">
+                    <g id="back-2" data-name="back">
+                        <g id="back-3" data-name="back">
+                            <g transform="matrix(1, 0, 0, 1, -18, -14)">
+                                <path id="back-4" data-name="back"
+                                    d="M27.75,0h1128.5C1171.576,0,1184,10.66,1184,23.81V76.19c0,13.15-12.424,23.81-27.75,23.81H27.75C12.424,100,0,89.34,0,76.19V23.81C0,10.66,12.424,0,27.75,0Z"
+                                    transform="translate(0 10)" fill="#121821" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </symbol>
+            <svg width="1202" height="118.001" class="header-main-bg">
+                <use xlink:href="#header-bg" mask="url(#deep-mask)"></use>
+            </svg>
+        </svg>
+        <div class="header__content">
+            <div class="header__left-content">
+                <a href="index.html">
+                    <div class="logo">
+                        <svg width="75.715" height="75.715" class="header-logo">
+                            <use xlink:href="sprite.svg#logo-icom"></use>
+                        </svg>
+                        <span class="header_ttl-text">Кэшбэк<br>сервис</span>
+                    </div>
+                </a>
+                <nav id="nav" class="header-nav">
+                    <ul class="header-nav__menu">
+                        <a href="balance.html">
+                            <li class="header__menu-item" id="num_sum">
+                                <span class="header__menu-item-link">
+                                    <span id="header-menu-active-visible1"></span>
+                                </span>
+                                <div class="header_account-balance__line"></div>
+                            </li>
+                        </a>
+                        <a href="index.html">
+                            <li class="header__menu-item">
+                                <span class="header__menu-item-link">Заявки</span>
+                                <div class="header_account-balance__line"></div>
+                            </li>
+                        </a>
+                        <a href="payments.html">
+                            <li class="header__menu-item">
+                                <span class="header__menu-item-link">Выплаты</span>
+                                <div class="header_account-balance__line"></div>
+                            </li>
+                        </a>
+                        <a href="referal.html">
+                            <li class="header__menu-item activeHead">
+                                <span class="header__menu-item-link activeHead">Рефералы</span>
+                                <div class="header_account-balance__line line1"></div>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <div id="hb" class="header__buttons">
+                <div class="header__buttons-item">
+                    <svg class="header__buttons-item-img-message" width="30.922" height="30.998">
+                        <use xlink:href="sprite.svg#ico-chat1"></use>
+                    </svg>
+                </div>
+                <div class="header__notifications-block">
+                    <div class="header__buttons-item">
+                        <svg class="header__buttons-item-img-notifications" width="32.63" height="32.14">
+                            <use xlink:href="sprite.svg#ico-notife"></use>
+                        </svg>
+                    </div>
+                    <div class="header__number-notifications">
+                        <span class="header__number-notifications-txt">99+</span>
+                    </div>
+                </div>
+                <div class="header__buttons-item last_element">
+                    <svg class="header__buttons-item-img" width="28.72" height="31">
+                        <use xlink:href="sprite.svg#ico-user-1"></use>
+                    </svg>
+                </div>
+            </div>
+            <div id="noberg" class="header-window__navigation">
+                <div class="header-navigation__title">ООО «Моя фирма регистратор»</div>
+                <a>
+                    <div class="header-navigation__stage first-stage">
+                        <div class="header-navigation__lineFirst" id="line1"></div>
+                        <svg class="header-navigation__iconFirst" width="28" height="28">
+                            <use xlink:href="sprite.svg#ico-help-menu"></use>
+                        </svg>
+                        <span class="header-navigation__textFirst">Помощь</span>
+                    </div>
+                </a>
+                <a href="settings.html">
+                    <div class="header-navigation__stage second-stage">
+                        <div class="header-navigation__lineSecond"></div>
+
+                        <svg class="header-navigation__iconSecond" width="28" height="28">
+                            <use xlink:href="sprite.svg#ico-help2"></use>
+                        </svg>
+                        <span class="header-navigation__textSecond">Настройки</span>
+                    </div>
+                </a>
+                <a>
+                    <div class="header-navigation__stage fird-stage">
+                        <div class="header-navigation__lineFird"></div>
+                        <svg class="header-navigation__iconFird" width="28" height="28">
+                            <use xlink:href="sprite.svg#ico-help3"></use>
+                        </svg>
+                        <span class="header-navigation__textFird">Выход</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main payments-screen1">
+        <div class="ref-main__row1">
+            <h1 class="ref-main__row1-title">Реферальная программа</h1>
+            <div class="ref-main__row1-btn">
+                <svg class="ref-main__row1-svg">
+                    <use xlink:href="sprite.svg#ico-help-ref"></use>
+                </svg>
+            </div>
+        </div>
+        <span class="ref-main__text">Делитесь ссылкой с другими и получайте процент с их заявок</span>
+        <div class="ref-main__row2">
+            <div class="ref-main__row2-blockHover">
+                <svg class="ref-main__row2-svg">
+                    <use xlink:href="sprite.svg#ico-copylink"></use>
+                </svg>
+                <span class="ref-main__row2-text">https://my.icom.one/r123456789</span>
+                <div class="obolochlka_titleRef">
+                    <span class="name_phinans">Ваша ссылка скопирована!</span>
+                </div>
+            </div>
+            <a href="#" class="shareRef"><svg class="ref-main__row2-svg">
+                    <use xlink:href="sprite.svg#ico-telegram"></use>
+                </svg> </a>
+            <a href="#" class="shareRef"><svg class="ref-main__row2-svg">
+                    <use xlink:href="sprite.svg#ico-wa"></use>
+                </svg></a>
+            <a href="#" class="shareRef"><svg class="ref-main__row2-svg">
+                    <use xlink:href="sprite.svg#ico-vk"></use>
+                </svg></a>
+            <a href="#" class="shareRef"><svg class="ref-main__row2-svg">
+                    <use xlink:href="sprite.svg#ico-ok"></use>
+                </svg></a>
+        </div>
+        <div class="details-search2">
+            <div class="details-hide-main">
+                <div class="details-search-date">
+                    <div class="ico-back-btn" id="ico-back-btn3">
+                        <svg class="details-search-date__previous m11" width="8.744" height="16" viewBox="0 0 8.744 16">
+                            <use xlink:href="sprite.svg#back-arrow-kal"></use>
+                        </svg>
+                    </div>
+                    <div class="disprow" id="dis3">
+                        <svg class="details-search-date__icon-date3" width="17.951" height="18" viewBox="0 0 17.951 18">
+                            <use xlink:href="sprite.svg#ico-calendar"></use>
+                        </svg>
+                        <p id="kal-text3" class="details-search-date__time1">За всё время
+                        </p>
+                    </div>
+                    <div id="ico-next-btn3" class="ico-next-btn">
+                        <svg class="details-search-date__next1" width="8.744" height="16">
+                            <use xlink:href="sprite.svg#next-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div id="kal_3" class="hidden-date-search hide hidden-date-dis3">
+                    <button class="hide-date-li hidden-date-box" data-range3="week">На этой неделе</button>
+                    <button class="hide-date-li hidden-date-box" data-range3="month">В этом месяце</button>
+                    <button class="hide-date-li hidden-date-box" data-range3="year">В этом году</button>
+                    <button class="hide-date-li hidden-date-box" data-range3="all">За всё время</button>
+                    <input readonly class="hide-date-li hidden-date-box" placeholder="Указать период..."
+                        id="dateRangePicker3" data-range3="custom">
+                </div>
+            </div>
+            <div style="display: none;" data-filter="filter-active1" class="filter_active_element">
+                <div class="filter_active_element-content">
+                    <svg class="icon-filter-active" id="ico-cross20" width="9.174" height="9.174">
+                        <use xlink:href="sprite.svg#filter-icon1"></use>
+                    </svg>
+                    <svg id="ico-cross-act20" class="icon-filter-active active_duw" style="display: none;"
+                        xmlns="http://www.w3.org/2000/svg" width="13.174" height="13.174" viewBox="0 0 13.174 13.174">
+                        <use xlink:href="sprite.svg#filter-icon1"></use>
+                    </svg>
+                    <span class="filter_active_element-text"></span>
+                </div>
+            </div>
+    
+            <div style="display: none;" data-filter="filter-active2" class="filter_active_element">
+                <div class="filter_active_element-content">
+                    <svg class="icon-filter-active" id="ico-cross1" xmlns="http://www.w3.org/2000/svg" width="9.174"
+                        height="9.174" viewBox="0 0 9.174 9.174">
+                        <use xlink:href="sprite.svg#filter-icon1"></use>
+                    </svg>
+                    <svg id="ico-cross-act1" class="icon-filter-active active_duw" style="display: none;"
+                        xmlns="http://www.w3.org/2000/svg" width="13.174" height="13.174" viewBox="0 0 13.174 13.174">
+                        <use xlink:href="sprite.svg#filter-icon1"></use>
+                    </svg>
+                    <span class="filter_active_element-text"></span>
+                </div>
+            </div>
+            <label class="input-container input-container-balance">
+                <input type="text" placeholder=" " class="details-search__input" id="sinput">
+                <span class="input__lable1">Поиск по статусу или номеру телефона</span>
+            </label>
+            <svg id="poick" class="details-search__icon-search">
+                <use xlink:href="sprite.svg#ico-search"></use>
+            </svg>
+            <svg id="filter" class="details-search__filter">
+                <use xlink:href="sprite.svg#ico-filter"></use>
+            </svg>
+        </div>
+        <div style="display: none;" id="filters" class="filters">
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters_icon" id="ico-rko" xmlns="http://www.w3.org/2000/svg" width="19.916"
+                        height="18">
+                        <use xlink:href="sprite.svg#ico-rko-filter"></use>
+                    </svg>
+                    <span class="filters__filters-text">РКО</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters_icon" xmlns="http://www.w3.org/2000/svg" width="18.036" height="18">
+                        <use xlink:href="sprite.svg#ico-bank-card"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Банковская карта</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="filters-icon" width="13.157" height="18"
+                        viewBox="0 0 13.157 18">
+                        <use xlink:href="sprite.svg#ico-pos2"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Эквайринг</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <use xlink:href="sprite.svg#currency"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Валютный счёт</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <use xlink:href="sprite.svg#ico-zp"></use>
+                    </svg>
+                    <span class="filters__filters-text">Зарплатный проект</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" id="ico-new-wait" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="18" viewBox="0 0 18 18">
+                        <use xlink:href="sprite.svg#ico-new"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Новая заявка</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="17.915" height="18">
+                        <use xlink:href="sprite.svg#ico-wait-meet"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Ожидание встречи</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="17.955" height="18">
+                        <use xlink:href="sprite.svg#ico-documents"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Подготовка документов</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="17.993" height="18">
+                        <use xlink:href="sprite.svg#status2"></use>
+                    </svg>
+                    <span class="filters__filters-text">Ожидает активации</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" id="ico-done" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <use xlink:href="sprite.svg#ico-done-22"></use>
+                    </svg>
+                    <span class="filters__filters-text">Активирован</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="17.916" height="18">
+                        <use xlink:href="sprite.svg#ico-draft"></use>
+                    </svg>
+                    <span class="filters__filters-text">Черновик</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="17.959" height="18">
+                        <use xlink:href="sprite.svg#ico-bank-no"></use>
+                    </svg>
+                    <span class="filters__filters-text">Отказ банка</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" id="ico-client-no" xmlns="http://www.w3.org/2000/svg" width="18.013"
+                        height="18">
+                        <use xlink:href="sprite.svg#ico-client-no-2"></use>
+                    </svg>
+
+
+                    <span class="filters__filters-text">Отказ клиента</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <use xlink:href="sprite.svg#ico-error"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Ошибка</span>
+                </div>
+            </div>
+            <div class="filters__filters-element">
+                <div class="filters__filters-element-content">
+                    <svg class="filters-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <use xlink:href="sprite.svg#ico-duplicate-2"></use>
+                    </svg>
+
+                    <span class="filters__filters-text">Дубликат</span>
+                </div>
+            </div>
+        </div>
+        <div class="purchase-history-blockRef">
+            <div class="purchase-history-block__elementSett">
+                <div class="purchase-history-block__dateSett">
+                    <span class="purchase-history-block__text-dateSett">Сегодня</span>
+                </div>
+                <div class="purchase-history-block__operationSett details-hoverSett">
+                    <div class="operationSett-notifi-leftContent">
+                        <svg width="40" height="37.099" class="notifi-icon-sett">
+                            <use xlink:href="sprite.svg#ico-ref"></use>
+                        </svg>
+                        <span class="notifi-ttl-ref">+7 916 5**-**59</span>
+                    </div>
+                    <div class="operationRef-notifi-rightContent">
+                        <span class="notifi-name-ref">Ждём заявок</span>
+                        <div class="phinans_element">
+                            <svg width="40" height="37.099" class="notifi-icon-white">
+                                <use xlink:href="sprite.svg#status"></use>
+                            </svg>
+                            <div class="obolochlka_title3">
+                                <span class="name_phinans">Новая выплата</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-history-block__elementSett">
+                <div class="purchase-history-block__dateSett">
+                    <span class="purchase-history-block__text-dateSett">15 декабря 2021</span>
+                </div>
+                <div class="purchase-history-block__operationSett details-hoverSett">
+                    <div class="operationSett-notifi-leftContent">
+                        <svg width="40" height="37.099" class="notifi-icon-sett">
+                            <use xlink:href="sprite.svg#ico-ref"></use>
+                        </svg>
+                        <span class="notifi-ttl-ref">+7 916 5**-**59</span>
+                    </div>
+                    <div class="operationRef-notifi-rightContent">
+                        <span class="notifi-name-ref">10 счетов</span>
+                        <span class="notifi-sum-ref">+1000 ₽</span>
+                        <div class="phinans_element">
+                            <svg width="40" height="37.099" class="notifi-icon-white">
+                                <use xlink:href="sprite.svg#ico-done"></use>
+                            </svg>
+                            <div class="obolochlka_title3">
+                                <span class="name_phinans">Выплата зачислена</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-line">
+        </div>
+        <div class="footer">
+            <p class="footer-text__by">© 2022 Lits Conuslting<br>ИНН 773168762960</p>
+            <p class="footer-text__Design">Дизайн<br>«Арт Студия Андрея Шкарина»</p>
+        </div>
+    </div>
+    <script type="module" src="js/build.js"></script>
+</body>
+
+</html>

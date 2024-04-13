@@ -1,0 +1,17 @@
+env:
+  browser: true
+  commonjs: true
+  es2021: true
+extends: airbnb-base
+parserOptions:
+  ecmaVersion: latest
+rules:
+  linebreak-style:
+    - error
+    - windows
+globals:
+  $: true
+  AirDatepicker: true
+  Cleave: true
+  Chart: true
+  ChartDataLabels: true

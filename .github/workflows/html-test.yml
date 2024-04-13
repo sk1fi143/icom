@@ -1,0 +1,22 @@
+name: HTML Check
+
+on: pull_request
+
+jobs:
+  build:
+    name: HTML Check test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2 # Requried will all actions 
+    
+    - name: Checks HTML5
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        root: balance icom/
+
+    # - name: Checks CSS
+    #   uses: ./
+    #   with:
+    #     css: true
+    #     root: balance icom/css/
+    #     blacklist: assets

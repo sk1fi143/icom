@@ -1,0 +1,135 @@
+[
+    {
+        "date": "1 сентября",
+        "successful": 80,
+        "failed": 35,
+        "processing": 20,
+        "total": 100
+    },
+    {
+        "date": "2 сентября",
+        "successful": 30,
+        "failed": 15,
+        "processing": 8,
+        "total": 50
+    },
+    {
+        "date": "3 сентября",
+        "successful": 20,
+        "failed": 18,
+        "processing": 12,
+        "total": 46
+    },
+    {
+        "date": "4 сентября",
+        "successful": 45,
+        "failed": 38,
+        "processing": 29,
+        "total": 78
+    },
+    {
+        "date": "5 сентября",
+        "successful": 50,
+        "failed": 45,
+        "processing": 35,
+        "total": 99
+    },
+    {
+        "date": "6 сентября",
+        "successful": 40,
+        "failed": 35,
+        "processing": 30,
+        "total": 60
+    },
+    {
+        "date": "7 сентября",
+        "successful": 55,
+        "failed": 27,
+        "processing": 20,
+        "total": 78
+    },
+    {
+        "date": "8 сентября",
+        "successful": 77,
+        "failed": 65,
+        "processing": 50,
+        "total": 90
+    },
+    {
+        "date": "9 сентября",
+        "successful": 43,
+        "failed": 30,
+        "processing": 50,
+        "total": 67
+    },
+    {
+        "date": "10 сентября",
+        "successful": 53,
+        "failed": 20,
+        "processing": 40,
+        "total": 66
+    },
+    {
+        "date": "11 сентября",
+        "successful": 42,
+        "failed": 45,
+        "processing": 35,
+        "total": 55
+    },
+    {
+        "date": "12 сентября",
+        "successful": 13,
+        "failed": 5,
+        "processing": 10,
+        "total": 30
+    },
+    {
+        "date": "13 сентября",
+        "successful": 53,
+        "failed": 40,
+        "processing": 13,
+        "total": 73
+    },
+    {
+        "date": "14 сентября",
+        "successful": 57,
+        "failed": 35,
+        "processing": 53,
+        "total": 84
+    },
+    {
+        "date": "15 сентября",
+        "successful": 37,
+        "failed": 47,
+        "processing": 17,
+        "total": 53
+    },
+    {
+        "date": "16 сентября",
+        "successful": 57,
+        "failed": 32,
+        "processing": 32,
+        "total": 78
+    },
+    {
+        "date": "17 сентября",
+        "successful": 32,
+        "failed": 34,
+        "processing": 34,
+        "total": 54
+    },
+    {
+        "date": "18 сентября",
+        "successful": 34,
+        "failed": 64,
+        "processing": 12,
+        "total": 67
+    },
+    {
+        "date": "19 сентября",
+        "successful": 26,
+        "failed": 12,
+        "processing": 14,
+        "total": 45
+    }
+]

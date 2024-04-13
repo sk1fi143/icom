@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="js/maskPosition.min.js"></script>
+</head>
+
+<body data-title="settings">
+            <div class="header">
+                <svg class="header-bg">
+                            <mask id="deep-mask">
+                                <rect width="100%" height="100%" fill="white"/>
+                            </mask>
+                            <symbol id="deep-mask-svg">
+                                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="none">
+                                      <path id="deep-2" data-name="deep" d="M140,77.42H0c11.025,0,19.994-7.634,19.994-17.015V17.015c0-9.4,8.954-17.015,20-17.015h80c11.046,0,20,7.618,20,17.015V60.4c0,9.381,8.969,17.013,19.994,17.015Z" transform="translate(0 33)" fill="#121821"/>
+                                    </g>
+                            </symbol>
+                        <symbol viewBox="0 0 1202 118.001" id="header-bg">
+                                <g id="header" transform="translate(18 14)">
+                                  <g id="back-2" data-name="back" transform="translate(0 0.371)">
+                                    <g id="back-3" data-name="back" transform="translate(0 -0.371)">
+                                      <g transform="matrix(1, 0, 0, 1, -18, -14)" >
+                                        <path id="back-4" data-name="back" d="M27.75,0h1128.5C1171.576,0,1184,10.66,1184,23.81V76.19c0,13.15-12.424,23.81-27.75,23.81H27.75C12.424,100,0,89.34,0,76.19V23.81C0,10.66,12.424,0,27.75,0Z" transform="translate(0 10)" fill="#121821"/>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>     
+                        </symbol>      
+                    <svg width="1202" height="118.001" class="header-main-bg">
+                        <use xlink:href="#header-bg" mask="url(#deep-mask)"></use>
+                    </svg>
+                </svg>
+                <div class="header__content">
+                    <div class="header__left-content">
+                        <a href="index.html">
+                        <div class="logo">
+                        <svg width="75.715" height="75.715" class="header-logo">
+                            <use xlink:href="sprite.svg#logo-icom"></use>
+                        </svg>
+                        <span class="header_ttl-text">Кэшбэк<br>сервис</span>
+                    </div></a>
+                        <nav id="nav" class="header-nav">
+                            <ul class="header-nav__menu">
+                                <a href="balance.html"><li class="header__menu-item" id="num_sum">
+                                    <span class="header__menu-item-link">
+                                        <span id="header-menu-active-visible1"></span>
+                                    </span>
+                                        <div class="header_account-balance__line"></div>
+                                </li></a>
+                                <a href="index.html"><li class="header__menu-item">
+                                    <span class="header__menu-item-link">Заявки</span>
+                                        <div class="header_account-balance__line"></div>
+                                </li></a>
+                                <a href="payments.html"><li class="header__menu-item">
+                                    <span class="header__menu-item-link">Выплаты</span>
+                                        <div class="header_account-balance__line"></div>
+                                </li></a>
+                                <a href="referal.html"><li class="header__menu-item">
+                                    <span class="header__menu-item-link">Рефералы</span>
+                                        <div class="header_account-balance__line"></div>
+                                </li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="hb" class="header__buttons">
+                        <div class="header__buttons-item">
+                            <svg class="header__buttons-item-img-message" width="30.922" height="30.998">
+                                <use xlink:href="sprite.svg#ico-chat1"></use>
+                            </svg>
+                        </div>
+                        <div class="header__notifications-block">
+                            <div class="header__buttons-item">
+                                <svg class="header__buttons-item-img-notifications" width="32.63" height="32.14">
+                                    <use xlink:href="sprite.svg#ico-notife"></use>
+                                </svg>
+                            </div>
+                            <div class="header__number-notifications">
+                                <span class="header__number-notifications-txt">99+</span>
+                            </div>
+                        </div>
+                        <div class="header__buttons-item last_element">
+                            <svg class="header__buttons-item-img" width="28.72" height="31">
+                                <use xlink:href="sprite.svg#ico-user-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="noberg" class="header-window__navigation">
+                        <div class="header-navigation__title">ООО «Моя фирма регистратор»</div>
+                        <a ><div class="header-navigation__stage first-stage">
+                            <div class="header-navigation__lineFirst" id="line1"></div>
+                            <svg class="header-navigation__iconFirst" width="28" height="28">
+                                <use xlink:href="sprite.svg#ico-help-menu"></use>
+                            </svg>
+                            <span class="header-navigation__textFirst">Помощь</span>
+                        </div></a>
+                        <a href="settings.html"><div class="header-navigation__stage second-stage">
+                            <div class="header-navigation__lineSecond"></div>
+          
+                            <svg class="header-navigation__iconSecond" width="28" height="28">
+                                <use xlink:href="sprite.svg#ico-help2"></use>
+                            </svg>
+                            <span class="header-navigation__textSecond">Настройки</span>
+                        </div></a>
+                        <a >
+                        <div class="header-navigation__stage fird-stage">
+                            <div class="header-navigation__lineFird"></div>
+                            <svg class="header-navigation__iconFird" width="28" height="28">
+                                <use xlink:href="sprite.svg#ico-help3"></use>
+                            </svg>
+                            <span class="header-navigation__textFird">Выход</span>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mypopover" popover>Изменения сохранены !
+                <svg id="closePopover" class="closePopover" width="26" height="26">
+                    <use xlink:href="sprite.svg#popoverClose"></use>
+                </svg>
+            </div>
+            <div class="main-sett">
+                <div class="main-col1-sett">
+            <div class="settings-main-row">
+                <div id="pages">
+                    <h1 class="title-pages">Настройки</h1>
+                    <div class="page" id="page1" data-inputs="true">
+                        <h2 class="title-page">Основные</h2>
+                        <div class="page-sett-FizAndIP-block">
+                            <div class="main-settings__inn-row">
+                                <label class="input-container">
+                                    <input type="text"  placeholder=" " class="keypress-inn settings-input inn-page1"
+                                       inputmode="numeric" required pattern="[0-9]{10,12}" maxlength="12">
+                                    <span class="input__lable">ИНН</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text"  placeholder=" " class="keypress-inn settings-input inn-snils inn-page1" required
+                                    inputmode="numeric" pattern="^\d{3}-\d{3}-\d{3} \d{2}$">
+                                    <span class="input__lable">СНИЛС</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="passport-inn-block sett-wrap-inn">
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input inn-page1" required
+                                    inputmode="text" pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Фамилия</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input inn-page1" required
+                                    inputmode="text" pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Имя</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container inn-otch" id="label-sett-otchestvo1">
+                                    <input type="text" placeholder=" " class="settings-input inn-otch inn-page1" required
+                                    inputmode="text" pattern="^[А-Яа-яЁё\s]+$" id="input-sett-otchestvo1">
+                                    <span class="input__lable">Отчество</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text"  placeholder=" " class="keypress-inn settings-input inn-page1" required
+                                    inputmode="numeric" pattern="[0-9]{15}" maxlength="15">
+                                    <span class="input__lable">ОГРНИП</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="block-row">
+                            <label class="checkbox-sett-label">
+                                <input type="checkbox" class="setting-checkbox" id="checkbox-sett-otchestvo1">
+                                <span class="setting-checkbox-arrow"></span>
+                                <span class="setting-checkbox-span">По паспорту без отчества</span>
+                            </label>
+                            <label class="input-container inn-set-rojd-1">
+                                <input type="text"  pattern="^\d{2}.\d{2}.\d{4}" value=""  placeholder=" " class="inn-page1 ps-inndata settings-input input-datepicker" required
+                                inputmode="numeric" id="datePickerSett1">
+                                <span class="input__lable label-data1">Дата рождения</span>
+                                <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="16.074">
+                                    <use xlink:href="sprite.svg#valid"></use>
+                                </svg>
+                            </label>
+                        </div>
+                            <div class="goNextSettings-block">
+                                <button
+                                    class="opacity1 nextStep-button__go-sett nextStep-button__go__design1 btn-save-sett btn-popstate opacity-btn-blue"
+                                    data-link="page2">Сохранить</button>
+                                    <div class="progressbarSett">
+                                        <div class="progressSett progress-movedSett">
+                                            <div class="progress-barSett"></div>
+                                        </div>
+                                        <div class="SettProgr-txt-row">
+                                            <span class="progress-textSett">Профиль заполнен на <span
+                                                class="progressSpan-bar-profSett">0</span>%</span>
+                                            <span class="progress-textLine"></span>
+                                            <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                    ></span></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="page-sett-Ul-block" data-inputs="true">
+                            <div class="main-settings__inn-wrap">
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input settIn-name-ul inn-page2" required
+                                    inputmode="text" pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Наименование</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text"  placeholder=" " class="keypress-inn settings-input inn-page2" required
+                                    inputmode="numeric" pattern="[0-9]{10,12}" maxlength="12">
+                                    <span class="input__lable">ИНН</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="keypress-inn settings-input inn-page2"  required
+                                    inputmode="numeric" pattern="[0-9]{13}">
+                                    <span class="input__lable">ОГРН</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text" placeholder=" "  class="keypress-inn settings-input inn-page2" required
+                                    inputmode="numeric" pattern="[0-9]{10,12}">
+                                    <span class="input__lable">КПП</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button
+                                    class="opacity2 btn-save-sett btn-popstate nextStep-button__go-sett nextStep-button__go__design1 opacity-btn-blue"
+                                    data-link="page2">Сохранить</button>
+                                    <div class="progressbarSett">
+                                        <div class="progressSett progress-movedSett">
+                                            <div class="progress-barSett"></div>
+                                        </div>
+                                        <div class="SettProgr-txt-row">
+                                            <span class="progress-textSett">Профиль заполнен на <span
+                                                class="progressSpan-bar-profSett">0</span>%</span>
+                                            <span class="progress-textLine"></span>
+                                            <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                    ></span></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page2" style="display: none;" data-inputs="true">
+                        <div class="page-sett-FizAndIP-block">
+                            <h2 class="title-page">Паспорт</h2>
+                            <div class="passport-inn-block">
+                                <label class="input-container">
+                                    <input type="text"  placeholder=" " class="settings-input keypress-inn ps-inn1 inn-page3" required
+                                    inputmode="numeric" pattern="^\d{2} \d{2} \d{6}$">
+                                    <span class="input__lable">Серия и номер</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text"  placeholder=" " pattern="^\d{2}.\d{2}.\d{4}" class="settings-input keypress-inn ps-inn2 inn-page3 ps-inndata2 input-datepicker" required
+                                    inputmode="numeric" id="datePickerSett2">
+                                    <span class="input__lable label-data1">Дата выдачи</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input  type="text" placeholder=" " class="settings-input keypress-inn ps-inn3 inn-page3" required
+                                    inputmode="numeric" pattern="^\d{3}-\d{3}$">
+                                    <span class="input__lable">Код подразделения</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input ps-inn4 inn-page3" required
+                                    inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Кем выдан</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button
+                                    class="opacity3 nextStep-button__go-sett nextStep-button__go__design1 btn-save-sett btn-popstate opacity-btn-blue"
+                                    data-link="page3">Сохранить</button>
+                                    <div class="progressbarSett progress-sett-margin">
+                                        <div class="progressSett progress-movedSett">
+                                            <div class="progress-barSett"></div>
+                                        </div>
+                                        <div class="SettProgr-txt-row">
+                                            <span class="progress-textSett">Профиль заполнен на <span
+                                                class="progressSpan-bar-profSett">0</span>%</span>
+                                            <span class="progress-textLine"></span>
+                                            <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                    ></span></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="page-sett-Ul-block" data-inputs="true">
+                            <h2 class="title-page">Руководитель</h2>
+                            <div class="main-settings__inn-wrap">
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input inn-page5" required
+                                    inputmode="text" pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Фамилия</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input inn-page5" required
+                                    inputmode="text" pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Имя</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container inn-otch" id="label-sett-otchestvo2">
+                                    <input type="text" placeholder=" " class="settings-input inn-otch" required
+                                    inputmode="text"  pattern="^[А-Яа-яЁё\s]+$" id="input-sett-otchestvo2">
+                                    <span class="input__lable">Отчество</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                                <label class="input-container">
+                                    <input type="text" placeholder=" " class="settings-input inn-page5" required
+                                    inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                    <span class="input__lable">Должность</span>
+                                    <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="16.074">
+                                        <use xlink:href="sprite.svg#valid"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <label class="checkbox-sett-label">
+                                <input type="checkbox" class="setting-checkbox" id="checkbox-sett-otchestvo2">
+                                <span class="setting-checkbox-arrow"></span>
+                                <span class="setting-checkbox-span">По паспорту без отчества</span>
+                            </label>
+                            <div class="goNextSettings-block">
+                                <button
+                                    class="opacity5 nextStep-button__go-sett nextStep-button__go__design1 btn-save-sett btn-popstate opacity-btn-blue"
+                                    data-link="page3">Сохранить</button>
+                                    <div class="progressbarSett">
+                                        <div class="progressSett progress-movedSett">
+                                            <div class="progress-barSett"></div>
+                                        </div>
+                                        <div class="SettProgr-txt-row">
+                                            <span class="progress-textSett">Профиль заполнен на <span
+                                                class="progressSpan-bar-profSett">0</span>%</span>
+                                            <span class="progress-textLine"></span>
+                                            <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                    ></span></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page3" style="display: none;" data-inputs="true">
+                        <h2 class="title-page">Адрес регистрации</h2>
+                        <div class="page-sett-FizAndIP-block">
+                            <div class="adress-inn-block">
+                                <div class="adress-inn-block-col1">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1 inn-page6" required
+                                        inputmode="text"    pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Субъект РФ</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1 inn-page6" required
+                                        inputmode="text"   pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Населённый пункт</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <div class="adress-inn-block-row1">
+                                        <label class="input-container">
+                                            <input  type="text" placeholder=" " class=" settings-input as-inn2 inn-page6" required
+                                            inputmode="numeric" >
+                                            <span class="input__lable">Дом</span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input  type="text" placeholder=" " class="settings-input as-inn3 inn-page6" required
+                                            inputmode="numeric" >
+                                            <span class="input__lable">Корп.</span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input  type="text" placeholder=" " class="settings-input as-inn2 inn-page6" required
+                                            inputmode="numeric" >
+                                            <span class="input__lable kv-label">Кв.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="adress-inn-block-col1">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1 inn-page6" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Район</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1 inn-page6" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Улица</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input  type="text" maxlength="6" placeholder=" " class="keypress-inn settings-input as-inn1 inn-page6" required
+                                        inputmode="numeric"  pattern="^\d{6}$">
+                                        <span class="input__lable">Индекс</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button
+                                    class="opacity6 nextStep-button__go-sett nextStep-button__go__design1 btn-save-sett btn-popstate opacity-btn-blue"
+                                    data-link="page4">Сохранить</button>
+                                    <div class="progressbarSett progress-sett-margin2">
+                                        <div class="progressSett progress-movedSett">
+                                            <div class="progress-barSett"></div>
+                                        </div>
+                                        <div class="SettProgr-txt-row">
+                                            <span class="progress-textSett">Профиль заполнен на <span
+                                                class="progressSpan-bar-profSett">0</span>%</span>
+                                            <span class="progress-textLine"></span>
+                                            <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                    ></span></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="page-sett-Ul-block">
+                            <h3 class="ul-adress-title-fact">Юридический</h3>
+                            <div class="settUl-adress-row1">
+                                <div class="adress-inn-block-col1">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"   pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Субъект РФ</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Населённый пункт</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <div class="adress-inn-block-row1">
+                                        <label class="input-container">
+                                            <input  type="text" placeholder=" " class="keypress-inn settings-input as-inn2" required
+                                            inputmode="numeric"    pattern="^[ 0-9]+$">
+                                            <span class="input__lable">Дом</span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="text" placeholder=" "  class="keypress-inn settings-input as-inn3" required
+                                            inputmode="numeric"  pattern="^[ 0-9]+$">
+                                            <span class="input__lable">Корп.</span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="text" placeholder=" " class="settings-input keypress-inn as-inn2"  required
+                                            inputmode="numeric"  pattern="^[ 0-9]+$">
+                                            <span class="input__lable">Оф.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="adress-inn-block-col1">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Район</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Улица</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input  type="text" maxlength="6" placeholder=" " class="settings-input keypress-inn as-inn1" required
+                                        inputmode="numeric" pattern="^d{6}$">
+                                        <span class="input__lable">Индекс</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row-title-UlAdress-sett">
+                                <h3 class="ul-adress-title-fact">Фактический</h3>
+                                <label class="checkbox-sett-label labelCheck-ulAdr-sett">
+                                    <input type="checkbox" class="setting-checkbox">
+                                    <span class="setting-checkbox-arrow"></span>
+                                    <span class="setting-checkbox-span">Как юридический</span>
+                                </label>
+                            </div>
+                            <div class="settUl-adress-row1">
+                                <div class="adress-inn-block-col1">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Субъект РФ</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"   pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Населённый пункт</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <div class="adress-inn-block-row1">
+                                        <label class="input-container">
+                                            <input  type="text" placeholder=" " class="keypress-inn settings-input as-inn2" required
+                                            inputmode="numeric"  pattern="^[ 0-9]+$">
+                                            <span class="input__lable">Дом</span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="text" placeholder=" " class="settings-input keypress-inn as-inn3"  required
+                                            inputmode="numeric"   pattern="^[ 0-9]+$">
+                                            <span class="input__lable">Корп.</span>
+                                        </label>
+                                        <label class="input-container">
+                                            <input type="text" placeholder=" " class="settings-input keypress-inn as-inn2" required 
+                                            inputmode="numeric"   pattern="^[ 0-9]+$">
+                                            <span class="input__lable">Оф.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="adress-inn-block-col1">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Район</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" " class="settings-input as-inn1" required
+                                        inputmode="text"  pattern="^[А-Яа-яЁё\s]+$">
+                                        <span class="input__lable">Улица</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input  type="text" maxlength="6" placeholder=" " class="keypress-inn settings-input as-inn1" required
+                                        inputmode="numeric" pattern="^\d{6}$">
+                                        <span class="input__lable">Индекс</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="goNextSettings-block">
+                            <button
+                                class="btn-popstate nextStep-button__go-sett nextStep-button__go__design1 opacity-btn-blue btn-save-settUl-adress btn-save-sett btn-popstate"
+                                data-link="page4">Сохранить</button>
+                                <div class="progressbarSett">
+                                    <div class="progressSett progress-movedSett">
+                                        <div class="progress-barSett"></div>
+                                    </div>
+                                    <div class="SettProgr-txt-row">
+                                        <span class="progress-textSett">Профиль заполнен на <span
+                                            class="progressSpan-bar-profSett">0</span>%</span>
+                                        <span class="progress-textLine"></span>
+                                        <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                            данные
+                                                ></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page4" style="display: none;" data-inputs="true">
+                        <h2 class="title-page">Рассчётный счёт</h2>
+                        <div class="passport-inn-block">
+                            <label class="input-container">
+                                <input type="text" placeholder=" " class="settings-input inn-page7" required
+                                inputmode="text"   pattern="^[А-Яа-яЁё\s]+$">
+                                <span class="input__lable">Банк</span>
+                                <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="16.074">
+                                    <use xlink:href="sprite.svg#valid"></use>
+                                </svg>
+                            </label>
+                            <label class="input-container">
+                                <input inputmode="numeric"  type="text" placeholder=" " class="keypress-inn settings-input inn-page7" required pattern="[0-9]{9}" maxlength="9">
+                                <span class="input__lable">БИК</span>
+                                <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="16.074">
+                                    <use xlink:href="sprite.svg#valid"></use>
+                                </svg>
+                            </label>
+                            <label class="input-container">
+                                <input inputmode="numeric" pattern="^\d{3}\s\d{2}\s\d{3}\s\d{1}\s\d{4}\s\d{7}" type="text" placeholder=" " class="ps-innPay keypress-inn settings-input inn-page7" required maxlength="25">
+                                <span class="input__lable">Рассчётный счёт</span>
+                                <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="16.074">
+                                    <use xlink:href="sprite.svg#valid"></use>
+                                </svg>
+                            </label>
+                            <label class="input-container">
+                                <input inputmode="numeric" pattern="^\d{3}\s\d{2}\s\d{3}\s\d{1}\s\d{4}\s\d{7}" type="text" placeholder=" " class="keypress-inn settings-input inn-page7 ps-innPay2" required maxlength="25">
+                                <span class="input__lable">Корр. счёт</span>
+                                <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="16.074">
+                                    <use xlink:href="sprite.svg#valid"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="SettFilter-main">
+                            <div class="SettFilter">
+                                <input type="text" readonly class="inn-page7 inn-nalog" value="Налогообложение">
+                                <svg width="15.4" height="8.068" class="SettFilterSvg">
+                                    <use xlink:href="sprite.svg#ico-sett-filter"></use>
+                                </svg>
+                            </div>
+                            <div class="hidden-filterSett">
+                                <div class="hidden-filterSett-li">УСН 6%</div>
+                                <div class="hidden-filterSett-li">УСН 15%</div>
+                                <div class="hidden-filterSett-li">ОСН</div>
+                            </div>
+                        </div>
+                        <div class="goNextSettings-block">
+                            <button id="opacity7"
+                                class="opacity7 nextStep-button__go-sett nextStep-button__go__design1 btn-save-sett btn-popstate opacity-btn-blue"
+                                data-link="page5">Сохранить</button>
+                                <div class="progressbarSett progress-sett-margin2">
+                                    <div class="progressSett progress-movedSett">
+                                        <div class="progress-barSett"></div>
+                                    </div>
+                                    <div class="SettProgr-txt-row">
+                                        <span class="progress-textSett">Профиль заполнен на <span
+                                            class="progressSpan-bar-profSett">0</span>%</span>
+                                        <span class="progress-textLine"></span>
+                                        <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                            данные
+                                                ></span></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page5" style="display: none;" data-inputs="true">
+                        <div class="page5-firstScreen">
+                            <h2 class="title-page">Контакты</h2>
+                            <div class="contactSett-row1">
+                                <div class="contacts-inn-block">
+                                    <label class="input-container">
+                                        <input inputmode="email" type="email" placeholder=" " class="settings-input inn-page8" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$">
+                                        <span class="input__lable">E-mail</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input pattern="^(8|\+7) \(\d{3}\) \d{3}-\d{2}-\d{2}$" inputmode="tel" type="tel" placeholder=" " class="settings-input input-inn3 inn-page8" required>
+                                        <span class="input__lable">Телефон</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <button id="saveEmail-btn-Sett"
+                                    class="nextStep-button__go-sett nextStep-button__go__design1 btn-saveEmail">Подтвердить
+                                    почту</button>
+                                <span class="saveEmail-page5Sett-text">Вам отправлено письмо, нажмите на ссылку<br> в
+                                    письме,
+                                    чтобы
+                                    подтвердить e-mail<br>
+                                    (Если почта ещё не подтверждена)</span>
+                            </div>
+                            <h3 class="page5Sett-titleSoc">Привяжите соцсеть или почту для быстрого входа</h3>
+                            <div class="page5Sett-row-buttons">
+                                <div class="page5Sett-buttons-NavSoc">
+                                    <button class="page5Sett-btn-socialWeb">
+                                        <svg class="page5Sett-btn-iconSoc" width="15.625" height="24.307">
+                                            <use xlink:href="sprite.svg#ico-ya"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="obolochlka_title2">
+                                        <span class="name_phinans">Вход через Яндекс</span>
+                                    </div>
+                                </div>
+                                <div class="page5Sett-buttons-NavSoc">
+                                    <button class="page5Sett-btn-socialWeb">
+                                        <svg class="page5Sett-btn-iconSoc" width="24" height="24.565">
+                                            <use xlink:href="sprite.svg#ico-google"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="obolochlka_title2">
+                                        <span class="name_phinans">Вход через Google</span>
+                                    </div>
+                                </div>
+                                <div class="page5Sett-buttons-NavSoc">
+                                    <button class="page5Sett-btn-socialWeb">
+                                        <svg class="page5Sett-btn-iconSoc" width="24" height="23.925">
+                                            <use xlink:href="sprite.svg#ico-mailru"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="obolochlka_title2">
+                                        <span class="name_phinans">Вход через Mail.ru</span>
+                                    </div>
+                                </div>
+                                <div class="page5Sett-buttons-NavSoc">
+                                    <button class="page5Sett-btn-socialWeb">
+                                        <svg class="page5Sett-btn-iconSoc" width="28.461" height="18">
+                                            <use xlink:href="sprite.svg#ico-vk"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="obolochlka_title2">
+                                        <span class="name_phinans">Вход через ВКонтакте</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button id="page5-btn-phoneLink"
+                                    class="nextStep-button__go-sett nextStep-button__go__design1 btn-popstate opacity8 opacity-btn-blue"
+                                    data-link="page5">Подтвердить</button>
+                                    <div class="progressbarSett progress-sett-margin3">
+                                        <div class="progressSett progress-movedSett">
+                                            <div class="progress-barSett"></div>
+                                        </div>
+                                        <div class="SettProgr-txt-row">
+                                            <span class="progress-textSett">Профиль заполнен на <span
+                                                 class="progressSpan-bar-profSett">0</span>%</span>
+                                            <span class="progress-textLine"></span>
+                                            <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                    ></span></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="page5-secondScreen">
+                            <h2 class="title-page">Контакты</h2>
+                            <span class="secondScreen-text-takeSMS">На номер +7999 (Номер клиента) отправлено SMS</span>
+                            <span class="secondScreen-text-code">Введите код из SMS</span>
+                            <div class="row-input-codeSMS">
+                                <input class="number_input" type="number" max="1" data-tabindex2=1>
+                                <input class="number_input" type="number" max="1" data-tabindex2=2>
+                                <input class="number_input" type="number" max="1" data-tabindex2=3>
+                                <input class="number_input" type="number" max="1" data-tabindex2=4>
+                                <input class="number_input" type="number" max="1" data-tabindex2=5>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button id="page5-btn-goBack" class="page5Sett-btn-socialWeb">
+                                    <svg width="16.067" height="29.4" class="gobackSett-icon">
+                                        <use xlink:href="sprite.svg#back-arrow"></use>
+                                    </svg>
+                                </button>
+                                <button id="page6-btn-number"
+                                    class="takeSMS-btn nextStep-button__go-sett nextStep-button__go__design1 btn-save-sett btn-popstate"
+                                    data-link="page6">Подтвердить
+                                    номер</button>
+                                <div class="take-code-col">
+                                    <span class="timer-take-code-text2">Получить новый код через 10 сек.</span>
+                                    <button class="sett-btn-new-code2">Получить новый код</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page6" style="display: none;">
+                        <h2 class="title-page">Уведомления</h2>
+                        <div class="notifi-sett-row">
+                            <div class="notifi-sett-col1">
+                                <span class="notifi-sett-name">Все уведомления</span>
+                                <span class="notifi-sett-name">Основные уведомления</span>
+                                <span class="notifi-sett-name">Изменения правил банков</span>
+                                <span class="notifi-sett-name">Изменение цен</span>
+                                <span class="notifi-sett-name">Партнёрские акции</span>
+                                <span class="notifi-sett-name">Новые сообщения</span>
+                            </div>
+                            <div class="notifi-sett-col2">
+                                <div class="notifi-sett-col2-col">
+                                    <h3 class="notifi-sett-col2-name">телефон</h3>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="18.935" height="32">
+                                            <use xlink:href="sprite.svg#ico-contact-set-notifi"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="18.935" height="32">
+                                            <use xlink:href="sprite.svg#ico-contact-set-notifi"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="18.935" height="32">
+                                            <use xlink:href="sprite.svg#ico-contact-set-notifi"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="18.935" height="32">
+                                            <use xlink:href="sprite.svg#ico-contact-set-notifi"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="18.935" height="32">
+                                            <use xlink:href="sprite.svg#ico-contact-set-notifi"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="18.935" height="32">
+                                            <use xlink:href="sprite.svg#ico-contact-set-notifi"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="notifi-sett-col2-col">
+                                    <h3 class="notifi-sett-col2-name">e-mail</h3>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="32" height="22.906">
+                                            <use xlink:href="sprite.svg#ico-email"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="32" height="22.906">
+                                            <use xlink:href="sprite.svg#ico-email"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="32" height="22.906">
+                                            <use xlink:href="sprite.svg#ico-email"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="32" height="22.906">
+                                            <use xlink:href="sprite.svg#ico-email"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="32" height="22.906">
+                                            <use xlink:href="sprite.svg#ico-email"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="32" height="22.906">
+                                            <use xlink:href="sprite.svg#ico-email"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="notifi-sett-col2-col">
+                                    <h3 class="notifi-sett-col2-name">браузер</h3>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="28" height="25.969">
+                                            <use xlink:href="sprite.svg#ico-web-sett"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="28" height="25.969">
+                                            <use xlink:href="sprite.svg#ico-web-sett"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="28" height="25.969">
+                                            <use xlink:href="sprite.svg#ico-web-sett"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="28" height="25.969">
+                                            <use xlink:href="sprite.svg#ico-web-sett"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="28" height="25.969">
+                                            <use xlink:href="sprite.svg#ico-web-sett"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="notifi-sett-col2-btn">
+                                        <input class="notify-checkbox-sett" type="checkbox">
+                                        <svg class="notifi-sett-btn-icon" width="28" height="25.969">
+                                            <use xlink:href="sprite.svg#ico-web-sett"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbarSett progress-notifi-sett">
+                            <div class="progressSett progress-movedSett progressbar-notifi-sett">
+                                <div class="progress-barSett"></div>
+                            </div>
+                            <div class="SettProgr-txt-row progressbar-notifi-sett">
+                                <span class="progress-textSett">Профиль заполнен на <span
+                                    class="progressSpan-bar-profSett">0</span>%</span>
+                                <span class="progress-textLine"></span>
+                                <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                    данные
+                                        ></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page7" style="display: none;" data-inputs="true">
+                        <div class="page-firstScreen">
+                            <h2 class="title-page">Пароль</h2>
+                            <div class="passwordSett-row1">
+                                <div class="contacts-inn-block">
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" "
+                                            class="settings-input password-input-sett inn-page9" id="password1" required>
+                                        <span class="input__lable">Новый пароль</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                    <label class="input-container">
+                                        <input type="text" placeholder=" "
+                                            class="settings-input password-input-sett inn-page9" id="password2" required>
+                                        <span class="input__lable">Подтвердите пароль</span>
+                                        <svg class="inputSett-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="16.074">
+                                            <use xlink:href="sprite.svg#valid"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <svg id="checkpassword1-sett" class="page6Sett-checkPassword-icon" width="36.797"
+                                    height="31.943">
+                                    <use xlink:href="sprite.svg#ico-eye"></use>
+                                </svg>
+                                <svg id="checkpassword2-sett" class="page6Sett-checkPassword-icon" width="36.797"
+                                    height="36.543">
+                                    <use xlink:href="sprite.svg#ico-eye2"></use>
+                                </svg>
+                                <svg id="generatepassword-sett" class="page6Sett-checkPassword-icon" width="39.092"
+                                    height="31.246">
+                                    <use xlink:href="sprite.svg#pass-gen-btn"></use>
+                                </svg>
+                            </div>
+                            <span class="passwordSett-title">Пароль должен содержать</span>
+                            <div class="passwordSett-condition">
+                                <svg width="32" height="32">
+                                    <use xlink:href="sprite.svg#done"></use>
+                                </svg>
+                                <span class="passwordCond-text">Строчные буквы</span>
+                            </div>
+                            <div class="passwordSett-condition">
+                                <svg width="32" height="32">
+                                    <use xlink:href="sprite.svg#done"></use>
+                                </svg>
+                                <span class="passwordCond-text">Прописные буквы</span>
+                            </div>
+                            <div class="passwordSett-condition">
+                                <svg width="32" height="32">
+                                    <use xlink:href="sprite.svg#done"></use>
+                                </svg>
+                                <span class="passwordCond-text">Цифры</span>
+                            </div>
+                            <div class="passwordSett-condition">
+                                <svg width="32" height="32">
+                                    <use xlink:href="sprite.svg#done"></use>
+                                </svg>
+                                <span class="passwordCond-text">Специальные символы</span>
+                            </div>
+                            <div class="passwordSett-condition">
+                                <svg width="32" height="32">
+                                    <use xlink:href="sprite.svg#done"></use>
+                                </svg>
+                                <span class="passwordCond-text">Мин. 8 символов</span>
+                            </div>
+                            <div class="goNextSettings-block goNextSettings-block-pass">
+                                <button id="page6-btn-changePass"
+                                    class="opacity9 nextStep-button__go-sett nextStep-button__go__design1 btn-popstate opacity-btn-blue"
+                                    data-link="page7">Изменить пароль</button>
+                            </div>
+                        </div>
+                        <div class="page-secondScreen">
+                            <h2 class="title-page">Пароль</h2>
+                            <span class="secondScreen-text-takeSMS">На номер +7999 (Номер клиента) отправлено SMS</span>
+                            <span class="secondScreen-text-code">Введите код из SMS</span>
+                            <div class="row-input-codeSMS">
+                                <input class="number_input" type="number" max="1" data-tabindex=1>
+                                <input class="number_input" type="number" max="1" data-tabindex=2>
+                                <input class="number_input" type="number" max="1" data-tabindex=3>
+                                <input class="number_input" type="number" max="1" data-tabindex=4>
+                                <input class="number_input" type="number" max="1" data-tabindex=5>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button id="page6-btn-goBack" class="page5Sett-btn-socialWeb">
+                                    <svg width="16.067" height="29.4" class="gobackSett-icon">
+                                        <use xlink:href="sprite.svg#back-arrow"></use>
+                                    </svg>
+                                </button>
+                                <button id="completeSMS-btn-password-sett"
+                                    class="takeSMS-btn nextStep-button__go-sett nextStep-button__go__design1">Подтвердить
+                                    изменение</button>
+                                <div class="take-code-col">
+                                    <span class="timer-take-code-text">Получить новый код через 10 сек.</span>
+                                    <button class="sett-btn-new-code">Получить новый код</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page" id="page8" style="display: none;">
+                        <div class="page-sett-FizAndIP-block page8-Fiz-screen1">
+                            <h2 class="title-page">Документы физ. лица</h2>
+                            <div class="main-settings__inn-colDoc">
+                                <div class="sett-documents-row-col sett-documents-row-col-fiz">
+                                    <label class="checkbox-sett-label">
+                                        <input type="checkbox" class="setting-checkbox" id="checkDocFiz-1">
+                                        <span class="setting-checkbox-arrow"></span>
+                                        <span class="setting-checkbox-span">Согласен с политикой
+                                            конфиденциальности</span>
+                                    </label>
+                                    <div class="details-section__hidden-block-active__box">
+                                        <svg class="chart-section__hidden-block-active__box-file" width="20"
+                                            height="20">
+                                            <use xlink:href="sprite.svg#ico-file"></use>
+                                        </svg>
+                                        <span class="details-section__hidden-block-active__box-format">PDF</span>
+                                    </div>
+                                </div>
+                                <div class="sett-documents-row-col sett-documents-row-col-fiz">
+                                    <label class="checkbox-sett-label">
+                                        <input type="checkbox" class="setting-checkbox" id="checkDocFiz-2">
+                                        <span class="setting-checkbox-arrow"></span>
+                                        <span class="setting-checkbox-span">Согласен с правилами платформы</span>
+                                    </label>
+                                    <div class="details-section__hidden-block-active__box">
+                                        <svg class="chart-section__hidden-block-active__box-file" width="20"
+                                            height="20">
+                                            <use xlink:href="sprite.svg#ico-file"></use>
+                                        </svg>
+                                        <span class="details-section__hidden-block-active__box-format">PDF</span>
+                                    </div>
+                                </div>
+                                <div class="sett-documents-row-col sett-documents-row-col-fiz">
+                                    <label class="checkbox-sett-label">
+                                        <input type="checkbox" class="setting-checkbox" id="checkDocFiz-3">
+                                        <span class="setting-checkbox-arrow"></span>
+                                        <span class="setting-checkbox-span">Согласен с договором оферты</span>
+                                    </label>
+                                    <div class="details-section__hidden-block-active__box">
+                                        <svg class="chart-section__hidden-block-active__box-file" width="20"
+                                            height="20">
+                                            <use xlink:href="sprite.svg#ico-file"></use>
+                                        </svg>
+                                        <span class="details-section__hidden-block-active__box-format">PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="submit-button-docFiz" data-target="docFiz"
+                                class="submit-button nextStep-button__go-sett nextStep-button__go__design1 opacity-btn-blue">Подтвердить
+                                согласие</button>
+                            <span class="page8-span-soglComplete">Ваше согласие подтверждено через<br>SMS сообщение на
+                                номер
+                                +7-999-777-77-77<br>18 августа 2022 в 17:25</span>
+                                <div class="progressbarSett progress-notifi-sett">
+                                    <div class="progressSett progress-movedSett progressbar-notifi-sett">
+                                        <div class="progress-barSett"></div>
+                                    </div>
+                                    <div class="SettProgr-txt-row progressbar-notifi-sett">
+                                        <span class="progress-textSett">Профиль заполнен на <span
+                                            class="progressSpan-bar-profSett">0</span>%</span>
+                                        <span class="progress-textLine"></span>
+                                        <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                            данные
+                                                ></span></span>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        <div class="page-sett-Ul-block page8-Ul-screen">
+                            <h2 class="title-page">Документы юр. лица</h2>
+                            <div class="main-settings__inn-rowDoc">
+                                <div class="sett-documents-row-col sett-documents-row-col-ul">
+                                    <label class="checkbox-sett-label">
+                                        <input type="checkbox" class="setting-checkbox" id="checkDocUl-1">
+                                        <span class="setting-checkbox-arrow"></span>
+                                        <span class="setting-checkbox-span">Согласен с политикой
+                                            конфиденциальности</span>
+                                    </label>
+                                    <label class="checkbox-sett-label">
+                                        <input type="checkbox" class="setting-checkbox" id="checkDocUl-2">
+                                        <span class="setting-checkbox-arrow"></span>
+                                        <span class="setting-checkbox-span">Согласен с правилами платформы</span>
+                                    </label>
+                                    <label class="checkbox-sett-label">
+                                        <input type="checkbox" class="setting-checkbox" id="checkDocUl-3">
+                                        <span class="setting-checkbox-arrow"></span>
+                                        <span class="setting-checkbox-span">Согласен с договором оферты</span>
+                                    </label>
+                                </div>
+                                <div class="sett-documents-row-col2">
+                                    <div class="details-section__hidden-block-active__box">
+                                        <svg class="chart-section__hidden-block-active__box-file" width="20"
+                                            height="20">
+                                            <use xlink:href="sprite.svg#ico-file"></use>
+                                        </svg>
+                                        <span class="details-section__hidden-block-active__box-format">PDF</span>
+                                    </div>
+                                    <div class="details-section__hidden-block-active__box">
+                                        <svg class="chart-section__hidden-block-active__box-file" width="20"
+                                            height="20">
+                                            <use xlink:href="sprite.svg#ico-file"></use>
+                                        </svg>
+                                        <span class="details-section__hidden-block-active__box-format">PDF</span>
+                                    </div>
+                                    <div class="details-section__hidden-block-active__box">
+                                        <svg class="chart-section__hidden-block-active__box-file" width="20"
+                                            height="20">
+                                            <use xlink:href="sprite.svg#ico-file"></use>
+                                        </svg>
+                                        <span class="details-section__hidden-block-active__box-format">PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="submit-button-docUl" data-target="docUl"
+                                class="submit-button nextStep-button__go-sett nextStep-button__go__design1 opacity-btn-blue">Подтвердить
+                                согласие</button>
+                            <span class="page8-span-soglComplete">Ваше согласие подтверждено через<br>SMS сообщение на
+                                номер
+                                +7-999-777-77-77<br>18 августа 2022 в 17:25</span>
+                                <div class="progressbarSett progress-notifi-sett">
+                                    <div class="progressSett progress-movedSett progressbar-notifi-sett">
+                                        <div class="progress-barSett"></div>
+                                    </div>
+                                    <div class="SettProgr-txt-row progressbar-notifi-sett">
+                                        <span class="progress-textSett">Профиль заполнен на <span
+                                            class="progressSpan-bar-profSett">0</span>%</span>
+                                        <span class="progress-textLine"></span>
+                                        <span class="progress-textSett2"><span class="progressSpan-bar-dannie-sett">Заполните основные
+                                                данные
+                                                ></span></span>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="page8-secondScreenFiz">
+                            <h2 class="title-page">Документы физ. лица</h2>
+                            <span class="secondScreen-text-takeSMS">На номер +7999 (Номер клиента) отправлено SMS</span>
+                            <span class="secondScreen-text-code">Введите код из SMS</span>
+                            <div class="row-input-codeSMS">
+                                <input class="number_input" type="number" max="1" data-tabindex3=1>
+                                <input class="number_input" type="number" max="1" data-tabindex3=2>
+                                <input class="number_input" type="number" max="1" data-tabindex3=3>
+                                <input class="number_input" type="number" max="1" data-tabindex3=4>
+                                <input class="number_input" type="number" max="1" data-tabindex3=5>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button id="goback-firstScreen-page8Fiz" data-target="docFiz" class="takeSMS-btn page5Sett-btn-socialWeb">
+                                    <svg width="16.067" height="29.4" class="gobackSett-icon">
+                                        <use xlink:href="sprite.svg#back-arrow"></use>
+                                    </svg>
+                                </button>
+                                <button id="complete-btn-docFiz" data-target="docFiz"
+                                    class="takeSMS-btn nextStep-button__go-sett nextStep-button__go__design1">Подтвердить
+                                    согласие</button>
+                                <div class="take-code-col">
+                                    <span class="timer-take-code-text3">Получить новый код через 10 сек.</span>
+                                    <button class="sett-btn-new-code3">Получить новый код</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page8-secondScreenUl">
+                            <h2 class="title-page">Документы юр. лица</h2>
+                            <span class="secondScreen-text-takeSMS">На номер +7999 (Номер клиента) отправлено SMS</span>
+                            <span class="secondScreen-text-code">Введите код из SMS</span>
+                            <div class="row-input-codeSMS">
+                                <input class="number_input" type="number" max="1" data-tabindex4=1>
+                                <input class="number_input" type="number" max="1" data-tabindex4=2>
+                                <input class="number_input" type="number" max="1" data-tabindex4=3>
+                                <input class="number_input" type="number" max="1" data-tabindex4=4>
+                                <input class="number_input" type="number" max="1" data-tabindex4=5>
+                            </div>
+                            <div class="goNextSettings-block">
+                                <button id="goback-firstScreen-page8Ul" data-target="docUl" class="takeSMS-btn page5Sett-btn-socialWeb">
+                                    <svg width="16.067" height="29.4" class="gobackSett-icon">
+                                        <use xlink:href="sprite.svg#back-arrow"></use>
+                                    </svg>
+                                </button>
+                                <button id="complete-btn-docUl" data-target="docUl"
+                                    class="takeSMS-btn nextStep-button__go-sett nextStep-button__go__design1">Подтвердить
+                                    согласие</button>
+                                <div class="take-code-col">
+                                    <span class="timer-take-code-text4">Получить новый код через 10 сек.</span>
+                                    <button class="sett-btn-new-code4">Получить новый код</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dosumentsSett-var1">
+                            <span class="documents-sett-text">Для получения выплат<br>подпишите договор<br>и отправьте с
+                                почты
+                                (подставляется почта из контактов)<br>отсканированную копию на адрес
+                                info@icom.one</span>
+                            <button class="nextStep-button__go-sett nextStep-button__go__design1">Скачать
+                                договор</button>
+                        </div>
+                        <div class="dosumentsSett-var2">
+                            <span class="documents-sett-text">Для подписания договора,<br>подтвердите почту,<br>перейдя
+                                по
+                                ссылке в письме.<br>И скачайте договор на этой странице.</span>
+                            <button
+                                class="nextStep-button__go-sett nextStep-button__go__design1">Перейти в почту</button>
+                        </div>
+                        <div class="dosumentsSett-var3">
+                            <span class="documents-sett-text">Договор № 123456 подписан 14.12.2020</span>
+                            <button 
+                                class="nextStep-button__go-sett nextStep-button__go__design1">Скачать договор</button>
+                        </div>
+                        <div class="dosumentsSett-var4">
+                            <span class="documents-sett-text4">Для подписания договора,<br>заполните реквизиты на
+                                страницах</span>
+                            <ul class="documentSett-ul-var4">
+                                <li class="documentSett-ul-item">Основные</li>
+                                <li class="documentSett-ul-item">Паспорт</li>
+                                <li class="documentSett-ul-item">Адрес</li>
+                                <li class="documentSett-ul-item">Счёт</li>
+                                <li class="documentSett-ul-item">Контакты</li>
+                            </ul>
+                            <button 
+                                class="nextStep-button__go-sett nextStep-button__go__design1 btn-docSett-var4">Скачать
+                                договор</button>
+                        </div>
+                    </div>
+                    <div class="page" id="page9" style="display: none;">
+                        <h2 class="title-page">История входов</h2>
+                        <div class="purchase-history-blockSett">
+                            <div class="purchase-history-block__elementSett">
+                                <div class="purchase-history-block__dateSett">
+                                    <span class="purchase-history-block__text-dateSett">Сегодня</span>
+                                </div>
+                                <div class="purchase-history-block__operationSett details-hoverSett">
+                                    <div class="operationSett-notifi-leftContent">
+                                        <svg width="40" height="37.099" class="notifi-icon-sett">
+                                            <use xlink:href="sprite.svg#ico-contact-set"></use>
+                                        </svg>
+                                        <span class="notifi-name-sett">Iphone 11</span>
+                                    </div>
+                                    <span class="notifi-name-sett">Москва</span>
+                                    <div class="operationSett-notifi-rightContent">
+                                        <span class="notifi-name-sett">IP 105.225.255.155</span>
+                                        <span class="notifi-name-sett">15:22</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="purchase-history-block__elementSett">
+                                <div class="purchase-history-block__dateSett">
+                                    <span class="purchase-history-block__text-dateSett">15 декабря 2021</span>
+                                </div>
+                                <div class="purchase-history-block__operationSett details-hoverSett">
+                                    <div class="operationSett-notifi-leftContent">
+                                        <svg width="40" height="37.099" class="notifi-icon-sett">
+                                            <use xlink:href="sprite.svg#ico-browser"></use>
+                                        </svg>
+                                        <span class="notifi-name-sett">Яндекс.Браузер</span>
+                                    </div>
+                                    <span class="notifi-name-sett">Москва</span>
+                                    <div class="operationSett-notifi-rightContent">
+                                        <span class="notifi-name-sett">IP 105.225.255.155</span>
+                                        <span class="notifi-name-sett">15:22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="sett-btn-more sett-btn-new-codeHOVER">Показать ещё</button>
+                        <h3 class="title-device-sett">Устройства</h3>
+                        <div class="deviceSett-main-block">
+                            <div class="deviceSett-row-block">
+                                <div class="operationSett-notifi-leftContent2">
+                                    <svg width="40" height="37.099" class="notifi-icon-sett">
+                                        <use xlink:href="sprite.svg#ico-contact-set"></use>
+                                    </svg>
+                                    <span class="notifi-name-sett">Iphone 11</span>
+                                </div>
+                                <div class="operationSett-notifi-rightContent">
+                                    <span class="notifi-name-sett"><span class="notifi-name2-sett">Последний
+                                            вход:</span><br>5
+                                        июля 2022, 11:45</span>
+                                    <div class="button-deleteSett">
+                                        <svg width="24.16" height="26" class="button-deleteSett-icon">
+                                            <use xlink:href="sprite.svg#ico-trash"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="contentDeleteSett">
+                                        <span class="deleteText">Удалить?</span>
+                                        <div class="buttonDelete__yesSett">
+                                            <svg width="14" height="14" class="passport-progress__svg">
+                                                <use xlink:href="sprite.svg#done"></use>
+                                            </svg>
+                                            Да
+                                        </div>
+                                        <div class="buttonDelete__noSett">
+                                            <svg width="14" height="14" class="passport-progress__svg">
+                                                <use xlink:href="sprite.svg#error"></use>
+                                            </svg>
+                                            Нет
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deviceSett-row-block">
+                                <div class="operationSett-notifi-leftContent2">
+                                    <svg width="40" height="37.099" class="notifi-icon-sett">
+                                        <use xlink:href="sprite.svg#ico-contact-set"></use>
+                                    </svg>
+                                    <span class="notifi-name-sett">Xiaomi Redmi Note 155T</span>
+                                </div>
+                                <div class="operationSett-notifi-rightContent">
+                                    <span class="notifi-name-sett"><span class="notifi-name2-sett">Последний
+                                            вход:</span><br>4
+                                        июля 2018, 11:45</span>
+                                    <div class="button-deleteSett">
+                                        <svg width="24.16" height="26" class="button-deleteSett-icon">
+                                            <use xlink:href="sprite.svg#ico-trash"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="contentDeleteSett">
+                                        <span class="deleteText">Удалить?</span>
+                                        <div class="buttonDelete__yesSett">
+                                            <svg width="14" height="14" class="passport-progress__svg">
+                                                <use xlink:href="sprite.svg#done"></use>
+                                            </svg>
+                                            Да
+                                        </div>
+                                        <div class="buttonDelete__noSett">
+                                            <svg width="14" height="14" class="passport-progress__svg">
+                                                <use xlink:href="sprite.svg#error"></use>
+                                            </svg>
+                                            Нет
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="delete-all-device-btn"
+                            class="nextStep-button__go-sett nextStep-button__go__design1 btn-leave-device-sett">Выйти на
+                            всех устройствах</button>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <svg class="sidebar-bg">
+                        <defs>
+                            <mask id="subtract-mask">
+                                <rect width="100%" height="100%" fill="white"  />
+                                <use xlink:href="#svg-setting" fill="black" class="mask"/>
+                            </mask>
+                            <symbol viewBox="0 0 268.999 600" id="sidebar">
+                                <g id="Сгруппировать_439" data-name="Сгруппировать 439"
+                                    transform="translate(-982.5 -168)">
+                                    <g transform="matrix(1, 0, 0, 1, 982.5, 168)" filter="url(#back-shadow-black)">
+                                        <path id="back-shadow-black-2" data-name="back-shadow-black" d="M-10751,726h-193a25.833,25.833,0,0,1-10.12-2.043,25.917,25.917,0,0,1-8.266-5.572,25.916,25.916,0,0,1-5.571-8.265A25.846,25.846,0,0,1-10970,700V205.5625.786,25.786,0,0,1-7.915-18.2V176a25.845,25.845,0,0,1,2.043-10.121,25.913,25.913,0,0,1,5.571-8.265,25.912,12,0,0,1,8.266-5.572A25.833,25.833,0,0,1-10944,150h193a25.833,25.833,0,0,1,10.12,2.043,25.916,25.916,0,0,1,8.265,5.572,25.922,25.922,0,0,1,5.572,8.265A25.846,25.846,0,0,1-10725,176V700a25.846,25.846,0,0,1-2.043,10.121,25.923,25.923,0,0,1-5.572,8.265,25.909,25.909,0,0,1-8.265,5.572A25.833,25.833,0,0,1-10751,726Zm-219-520.431v78.486" transform="translate(10976 -144)" fill="#121821"/>
+                                    </g>
+                                </g>
+                            </symbol>
+                            <symbol id="svg-setting">
+                                <path id="svg-setting-2" data-name="svg-setting" d="M-10970,231H-10943A27.1,27.1,0,0,0-10970,257.672Zm0,0V177H-10943l-27,0,0-27a26.831,26.831,0,0,0,7.918,19.082A26.81,26.81,0,0,0-10943,177v0h161.007a27,27,0,0,1,27,27,27,27,0,0,1-27,27Z" transform="translate(10976.001 -130)" fill="#0A1326"/>
+                            </symbol>
+                        </defs>         
+                        <svg width="262.999" height="594">
+                            <use xlink:href="#sidebar" mask="url(#subtract-mask)" />
+                        </svg>
+                    </svg>
+                    <h3 class="sidebar-title">Настройки</h3>
+                    <span class="sidebar-item activeSett btn-popstate" data-link="page1" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#ico-help2"></use>
+                        </svg>
+                        <span class="sidebar-span">Основные</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page2" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#passport-icon"></use>
+                        </svg>
+                        <span class="sidebar-span" id="sidebar-sett-punct2">Паспорт</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page3" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#geo"></use>
+                        </svg>
+                        <span class="sidebar-span">Адрес</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page4" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#ico-pay"></use>
+                        </svg>
+                        <span class="sidebar-span">Счёт</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page5">
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#ico-contact-set"></use>
+                        </svg>
+                        <span class="sidebar-span">Контакты</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page6" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#sidebar-notife"></use>
+                        </svg>
+                        <span class="sidebar-span">Уведомления</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page7" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#ico-security"></use>
+                        </svg>
+                        <span class="sidebar-span">Пароль</span>
+                    </span>
+                    <span class="sidebar-item btn-popstate" data-link="page8" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#ico-doc"></use>
+                        </svg>
+                        <span class="sidebar-span">Документы</span>
+                    </span>
+                    <span class="sidebar-item sidebar-item-history btn-popstate" data-link="page9" >
+                        <svg class="sidebar-icon-li">
+                            <use xlink:href="sprite.svg#ico-time"></use>
+                        </svg>
+                        <span class="sidebar-span">История входов</span>
+                    </span>
+                    <div class="sidebar-ellips"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-main">
+            <div class="footer-line"></div>
+            <div class="footer">
+                <p class="footer-text__by">© 2022 Lits Conuslting<br>ИНН 773168762960</p>
+                <p class="footer-text__Design">Дизайн<br>«Арт Студия Андрея Шкарина»</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/build.js"></script>
+</body>
+
+</html>

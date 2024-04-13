@@ -1,0 +1,10 @@
+global-components:
+  DqButton:
+    element:
+      button
+      # Ignore all attributes on <DqButton> except the following:
+    attributes:
+      - role # Map the role attribute from <DqButton /> to <button />
+      - aria-* # Map all attributes starting with aria-
+      - action: type # <DqButton action="submit" /> maps to <button type="submit" />
+      - label: <text> #  <DqButton label="ABC" /> become <button>ABC</button>

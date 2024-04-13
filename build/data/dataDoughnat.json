@@ -1,0 +1,280 @@
+{
+    "prodcuts": [
+        {
+            "name": "РКО",
+            "logo": "ico-rko-xd",
+            "value": 5500
+        },
+        {
+            "name": "Зарплатный проект",
+            "logo": "ico-zp",
+            "value": 8000
+        },
+        {
+            "name": "Эквайринг",
+            "logo": "filter-icon-ekv",
+            "value": 29900
+        },
+        {
+            "name": "Карта",
+            "logo": "ico-bank-card",
+            "value": 4344
+        },
+        {
+          "name": "Зарплатный проект",
+          "logo": "ico-zp",
+          "value": 8000
+      },
+      {
+          "name": "Эквайринг",
+          "logo": "filter-icon-ekv",
+          "value": 2900
+      },
+      {
+          "name": "Карта",
+          "logo": "ico-bank-card",
+          "value": 4344
+      },
+      {
+        "name": "Зарплатный проект",
+        "logo": "ico-zp",
+        "value": 8000
+    },
+    {
+        "name": "Эквайринг",
+        "logo": "filter-icon-ekv",
+        "value": 2900
+    },
+    {
+        "name": "Карта",
+        "logo": "ico-bank-card",
+        "value": 4344
+    },
+    {
+        "name": "Карта",
+        "logo": "ico-bank-card",
+        "value": 4344
+    },
+    {
+      "name": "Зарплатный проект",
+      "logo": "ico-zp",
+      "value": 8000
+  },
+  {
+      "name": "Эквайринг",
+      "logo": "filter-icon-ekv",
+      "value": 2900
+  },
+  {
+      "name": "Карта",
+      "logo": "ico-bank-card",
+      "value": 4344
+  },
+  {
+    "name": "Зарплатный проект",
+    "logo": "ico-zp",
+    "value": 8000
+},
+{
+    "name": "Эквайринг",
+    "logo": "filter-icon-ekv",
+    "value": 2900
+},
+{
+    "name": "Карта",
+    "logo": "ico-bank-card",
+    "value": 4344
+},
+{
+    "name": "Карта",
+    "logo": "ico-bank-card",
+    "value": 4344
+},
+{
+  "name": "Зарплатный проект",
+  "logo": "ico-zp",
+  "value": 8000
+},
+{
+  "name": "Эквайринг",
+  "logo": "filter-icon-ekv",
+  "value": 2900
+},
+{
+  "name": "Карта",
+  "logo": "ico-bank-card",
+  "value": 4344
+},
+{
+"name": "Зарплатный проект",
+"logo": "ico-zp",
+"value": 8000
+},
+{
+"name": "Эквайринг",
+"logo": "filter-icon-ekv",
+"value": 2900
+},
+{
+"name": "Карта",
+"logo": "ico-bank-card",
+"value": 4344
+}
+    ],
+    "banks": [
+      {
+        "name": "Совкомбанк",
+        "logo": "sovkom",
+        "value": 8560
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      },{
+        "name": "Совкомбанк",
+        "logo": "sovkom",
+        "value": 8560
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      },{
+        "name": "Совкомбанк",
+        "logo": "sovkom",
+        "value": 8560
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      },{
+        "name": "Совкомбанк",
+        "logo": "sovkom",
+        "value": 8560
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      },
+      {
+        "name": "Локо Банк",
+        "logo": "loko",
+        "value": 7200
+      },
+      {
+        "name": "Райффайзен Банк",
+        "logo": "raif",
+        "value": 1707
+      }
+    ],
+    "referals": [
+      {
+        "name": "+7 999 999 99 99",
+        "logo": "ico-refIcon",
+        "value": 2105
+      },
+      {
+        "name": "+7 888 888 88 88",
+        "logo": "ico-refIcon",
+        "value": 2023
+      },
+      {
+        "name": "+7 777 777 77 77",
+        "logo": "ico-refIcon",
+        "value": 1601
+      },
+      {
+        "name": "+7 666 666 66 66",
+        "logo": "ico-refIcon",
+        "value": 4500
+      },
+      {
+        "name": "+7 888 888 88 88",
+        "logo": "ico-refIcon",
+        "value": 2023
+      },
+      {
+        "name": "+7 777 777 77 77",
+        "logo": "ico-refIcon",
+        "value": 1601
+      },
+      {
+        "name": "+7 666 666 66 66",
+        "logo": "ico-refIcon",
+        "value": 4500
+      },
+      {
+        "name": "+7 888 888 88 88",
+        "logo": "ico-refIcon",
+        "value": 2023
+      },
+      {
+        "name": "+7 777 777 77 77",
+        "logo": "ico-refIcon",
+        "value": 1601
+      },
+      {
+        "name": "+7 666 666 66 66",
+        "logo": "ico-refIcon",
+        "value": 4500
+      },
+      {
+        "name": "+7 888 888 88 88",
+        "logo": "ico-refIcon",
+        "value": 2023
+      },
+      {
+        "name": "+7 777 777 77 77",
+        "logo": "ico-refIcon",
+        "value": 1601
+      },
+      {
+        "name": "+7 666 666 66 66",
+        "logo": "ico-refIcon",
+        "value": 4500
+      }
+    ]
+  }

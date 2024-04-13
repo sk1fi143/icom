@@ -1,0 +1,109 @@
+.nextStep-button__go {
+  box-sizing: border-box;
+  height: 60px;
+  color: #fff;
+  border-radius: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: clamp(1.2rem, 5.56vw, 1.5rem);
+  margin: 20px 0;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.nextStep-button__go__design1 {
+  background: #0071E3;
+  background: linear-gradient(135deg, #0071E3 0%, #0859AF 100%);
+  box-shadow: inset 3px 3px 20px rgba(0, 0, 0, 0.8), inset -3px -3px 20px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.4s;
+  position: relative;
+  border: none;
+}
+.nextStep-button__go__design1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 62px;
+  box-shadow: -4px -4px 6px rgba(87, 171, 255, 0.47), 6px 6px 8px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s;
+}
+.nextStep-button__go__design1:active {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.8), inset -3px -3px 8px rgba(255, 255, 255, 0.5);
+}
+.nextStep-button__go__design1:active:after {
+  box-shadow: none;
+}
+.nextStep-button__go__design2 {
+  box-shadow: 0 0 0 4px #FFF;
+  transition: box-shadow 0.6s;
+  background: rgba(0, 0, 0, 0);
+}
+.nextStep-button__go__design2:active {
+  box-shadow: 0 0 0 4px #FFF, inset 8px 8px 16px rgba(0, 0, 0, 0.8), inset -6px -6px 16px rgba(255, 255, 255, 0.5);
+}
+.nextStep-button__go__design3 {
+  border: 1px solid #707070;
+  background-color: #2C3136;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.18), 6px 6px 8px rgba(0, 0, 0, 0.5);
+}
+.nextStep-button__go__design3:active {
+  background: linear-gradient(135deg, #0071E3 0%, #0859AF 100%);
+  border: none;
+  box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.8), inset -6px -6px 16px rgba(255, 255, 255, 0.5);
+}
+.nextStep-button__go__effect {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 62px;
+}
+.nextStep-button__go__effect:before {
+  left: 0;
+  content: "";
+  background: #fff;
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -5%;
+  border-radius: 50px;
+  margin-left: -30%;
+  opacity: 0;
+  transition: width 0.75s ease-in-out, opacity 0.75s ease-in-out;
+}
+.nextStep-button__go:active .nextStep-button__go:before {
+  width: 0px;
+  opacity: 1;
+  transition: 0s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nextStep-button__go__design1:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.8), inset -3px -3px 8px rgba(255, 255, 255, 0.5);
+  }
+  .nextStep-button__go__design1:hover:after {
+    box-shadow: none;
+  }
+  .nextStep-button__go__design2 {
+    transition: 0.6s all;
+    position: relative;
+  }
+  .nextStep-button__go__design2:hover {
+    box-shadow: 0 0 0 1px #FFF, inset 4px 4px 8px rgba(0, 0, 0, 0.8), inset -3px -3px 8px rgba(255, 255, 255, 0.5);
+  }
+  .nextStep-button__go__design3 {
+    transition: 0.8s all;
+  }
+  .nextStep-button__go__design3:hover {
+    background: linear-gradient(135deg, #0071E3 0%, #0859AF 100%);
+    border: none;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.8), inset -3px -3px 8px rgba(255, 255, 255, 0.5);
+  }
+}/*# sourceMappingURL=320.css.map */
